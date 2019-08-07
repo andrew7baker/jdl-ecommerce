@@ -1,0 +1,1 @@
+[微服务生成步骤](https://medium.com/jhipster/create-full-microservice-stack-using-jhipster-domain-language-under-30-minutes-ecc6e7fc3f77)
