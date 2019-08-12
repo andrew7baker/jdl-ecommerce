@@ -1,6 +1,16 @@
-先看下生成效果
+### 确认版本
+
+    ➜  ~ jhipster --version
+    INFO! Using JHipster version installed globally
+    6.2.0
+
+### 先看下生成后的启动效果
 
 ![mpGOSg.png](https://s2.ax1x.com/2019/08/12/mpGOSg.png)
+
+### docker-compose 生成步骤
+
+![mptFsJ.png](https://s2.ax1x.com/2019/08/12/mptFsJ.png)
 
 [微服务生成步骤](https://medium.com/jhipster/create-full-microservice-stack-using-jhipster-domain-language-under-30-minutes-ecc6e7fc3f77)
 
