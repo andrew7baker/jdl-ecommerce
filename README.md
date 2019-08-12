@@ -1,14 +1,18 @@
-### 确认版本
+### 1 确认版本
 
     ➜  ~ jhipster --version
     INFO! Using JHipster version installed globally
     6.2.0
 
-### 先看下生成后的启动效果
+### 2 先看下生成后的启动效果
 
 ![mpGOSg.png](https://s2.ax1x.com/2019/08/12/mpGOSg.png)
 
-### docker-compose 生成步骤
+### 3 生成项目
+
+    ➜  jdl-ecommerce git:(master) ✗ jhipster import-jdl microservice-ecommerce-store.jdl
+
+### 4 docker-compose 生成步骤
 
 ![mptFsJ.png](https://s2.ax1x.com/2019/08/12/mptFsJ.png)
 
