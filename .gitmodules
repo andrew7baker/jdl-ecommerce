@@ -1,3 +1,9 @@
 [submodule "invoice"]
 	path = invoice
 	url = https://github.com/andrew7baker/invoice.git
+[submodule "notification"]
+	path = notification
+	url = https://github.com/andrew7baker/notification.git
+[submodule "store"]
+	path = store
+	url = https://github.com/andrew7baker/store.git
