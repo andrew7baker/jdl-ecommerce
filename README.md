@@ -8,8 +8,11 @@
 
 ![mpGOSg.png](https://s2.ax1x.com/2019/08/12/mpGOSg.png)
 
-### 3 生成项目
+### 3 clone项目
 
+    git clone --recursive https://github.com/andrew7baker/jdl-ecommerce.git
+
+    如果要自己生成 store、invoice、notification三个项目则
     ➜  jdl-ecommerce git:(master) ✗ jhipster import-jdl microservice-ecommerce-store.jdl
 
 ### 4 docker-compose 生成步骤
