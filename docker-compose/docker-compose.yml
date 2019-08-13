@@ -53,7 +53,7 @@ services:
             - JHIPSTER_SLEEP=30
             - JHIPSTER_REGISTRY_PASSWORD=admin
         ports:
-            - '8080:8080'
+            - '8888:8080'
     store-mysql:
         image: 'mysql:5.7.20'
         environment:
