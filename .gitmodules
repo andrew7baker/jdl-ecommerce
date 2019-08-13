@@ -1,0 +1,3 @@
+[submodule "invoice"]
+	path = invoice
+	url = https://github.com/andrew7baker/invoice.git
