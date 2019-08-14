@@ -17,10 +17,10 @@
     ./mvnw -Pprod verify jib:dockerBuild -Dmaven.test.skip=true
     cd ../jdl-ecommerce/notification
     ./mvnw -Pprod verify jib:dockerBuild -Dmaven.test.skip=true
-    cd docker-compose-no-es
+    cd ../docker-compose-no-es
     docker-compose up -d
 
-    如果要自己重新生成 store、invoice、notification三个项目则
+    如果要自己重新生成 store、invoice、notification三个项目则23
     ➜  jdl-ecommerce git:(master) ✗ jhipster import-jdl microservice-ecommerce-store.jdl
 
 ### 4 docker-compose 生成步骤
