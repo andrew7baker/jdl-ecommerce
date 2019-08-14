@@ -1,6 +1,6 @@
 ### 1 确认版本
 
-    ➜  ~ jhipster --version
+    jhipster --version
     INFO! Using JHipster version installed globally
     6.2.0
 
@@ -11,8 +11,16 @@
 ### 3 clone项目
 
     git clone --recursive https://github.com/andrew7baker/jdl-ecommerce.git
+    cd jdl-ecommerce/notification
+    ./mvnw -Pprod verify jib:dockerBuild -Dmaven.test.skip=true
+    cd ../jdl-ecommerce/invoice
+    ./mvnw -Pprod verify jib:dockerBuild -Dmaven.test.skip=true
+    cd ../jdl-ecommerce/notification
+    ./mvnw -Pprod verify jib:dockerBuild -Dmaven.test.skip=true
+    cd docker-compose-no-es
+    docker-compose up -d
 
-    如果要自己生成 store、invoice、notification三个项目则
+    如果要自己重新生成 store、invoice、notification三个项目则
     ➜  jdl-ecommerce git:(master) ✗ jhipster import-jdl microservice-ecommerce-store.jdl
 
 ### 4 docker-compose 生成步骤
@@ -26,11 +34,5 @@
     git submodule add https://github.com/andrew7baker/invoice.git invoice
     git submodule add https://github.com/andrew7baker/notification.git notification
     git submodule add https://github.com/andrew7baker/store.git store
-
-[store代码地址](https://github.com/andrew7baker/store)
-
-[invoice代码地址](https://github.com/andrew7baker/invoice)
-
-[notification代码地址](https://github.com/andrew7baker/notification)
 
 [另一篇](https://blog.avenuecode.com/building-a-microservice-in-20-minutes-with-jhipster)
