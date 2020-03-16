@@ -1,0 +1,11 @@
+{
+  "generator-jhipster": {
+    "appsFolders": ["invoice", "store"],
+    "directoryPath": "../",
+    "gatewayType": "zuul",
+    "monitoring": "no",
+    "consoleOptions": [],
+    "serviceDiscoveryType": "eureka",
+    "jwtSecretKey": "ZTNlNWY0Yjc5ZmQ0YTdlODI2MmNlNjMzMjAxMWM5ODFkZmM3MmQxYjZlZTUyOTFjY2Y5NDhjZjRiNGU5NDVjODI1MzIyMjMzMjQyOWFkMDU4MGMyMDdlMmY3NTNlNmQ2M2E0Yg=="
+  }
+}
