@@ -23,6 +23,9 @@
     如果要自己重新生成 store、invoice、notification三个项目则23
     ➜  jdl-ecommerce git:(master) ✗ jhipster import-jdl microservice-ecommerce-store.jdl
 
+    mkdir docker-simp
+    jhipster docker-compose
+
 ### 4 docker-compose 生成步骤
 
 ![mptFsJ.png](https://s2.ax1x.com/2019/08/12/mptFsJ.png)
