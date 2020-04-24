@@ -1,7 +1,7 @@
 version: '2'
 services:
   store:
-    image: registry.cn-hangzhou.aliyuncs.com/jhipster-test/store:v5
+    image: registry.cn-hangzhou.aliyuncs.com/jhipster-test/store:v1-mac
     environment:
       - _JAVA_OPTIONS=-Xmx512m -Xms256m
       - 'SPRING_PROFILES_ACTIVE=prod,swagger'
