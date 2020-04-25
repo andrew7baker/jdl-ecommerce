@@ -1,0 +1,57 @@
+
+/*
+ * This is a microservice e-commerce store sample with Gateway and two microservice applications
+ * This uses JHipster registry for service discovery
+ */
+ 
+application {
+  config {
+    baseName gateway,
+    applicationType gateway,
+    packageName com.jhipster.demo.gateway,
+    serviceDiscoveryType eureka,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    cacheProvider hazelcast,
+    buildTool maven,
+    clientFramework react,
+    useSass true,
+    testFrameworks [protractor]
+  }
+  entities Size
+}
+
+application {
+  config {
+    baseName notification,
+    applicationType microservice,
+    packageName com.jhipster.demo.notification,
+    serviceDiscoveryType eureka,
+    authenticationType jwt,
+    databaseType mongodb,
+    prodDatabaseType mongodb,
+    devDatabaseType mongodb,
+    cacheProvider no,
+    enableHibernateCache false,
+    buildTool maven,
+    serverPort 8082,
+    skipUserManagement true
+  }
+  entities NotificationType
+}
+
+/* Entities for Store Gateway */
+
+/** Product sold by the Online store */
+
+enum Size {
+    S, M, L, XL, XXL
+}
+
+/* Entities for notification microservice */
+
+enum NotificationType {
+    EMAIL, SMS, PARCEL
+}
+
+microservice Notification with notification
